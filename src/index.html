@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>SwiftRift</title>
+</head>
+
+<body class="bg-gray-900 text-gray-300 w-screen h-screen">
+  <div class="grid md:grid-cols-2 gap-4 divide-y md:divide-x divide-teal-900 h-full w-full mx-auto">
+
+    <div class="flex flex-col items-center space-y-8 md:mt-20 pt-10 px-5">
+
+      <a href="https://github.com/hawolt/SwiftRift" target="_blank" rel="noreferrer">
+        <img src="assets/img/swift-rift-48x48.png" alt="SwiftRift Logo" class="transition-all hover:opacity-60">
+      </a>
+
+      <div
+        class="group relative mx-auto w-full max-w-[500px] overflow-hidden rounded-[16px] bg-gray-900 p-[1px] transition-all duration-300 ease-in-out bg-gradient-to-r from-pink-500 via-teal-500 to-teal-500 shadow shadow-teal-900">
+        <div
+          class="animate-spin-slow absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-teal-300 to-transparent visible">
+        </div>
+        <div class="relative rounded-[15px] bg-gray-900 p-6 space-y-6 w-full">
+          <h1 class="text-2xl font-semibold text-white">
+            Sign in
+          </h1>
+          <!-- Username / password form -->
+          <form class="flex flex-col space-y-4 w-full">
+            <div class="relative z-0 w-full mb-6 group">
+              <input type="text" name="username" id="floating-username"
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-500/80 appearance-none focus:outline-none focus:ring-0 focus:border-teal-500 peer"
+                placeholder=" " required />
+              <label for="floating-username"
+                class="peer-focus:font-medium absolute text-sm text-grey-500/80 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Username
+              </label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+              <input type="password" name="password" id="floating-password"
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-500/80 appearance-none focus:outline-none focus:ring-0 focus:border-teal-500 peer"
+                placeholder=" " required />
+              <label for="floating-password"
+                class="peer-focus:font-medium absolute text-sm text-grey-500/80 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Password
+              </label>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full">
+              <div class="flex flex-row items-center space-x-2">
+                <input type="checkbox" name="remember" id="remember"
+                  class="peer h-4 w-4 text-teal-500 focus:ring-teal-500 border-gray-300 rounded">
+                <label for="remember" class="text-sm">
+                  Remember me
+                </label>
+              </div>
+              <a href="#" class="text-sm text-teal-300 hover:text-teal-500 transition-all">
+                Forgot password?
+              </a>
+            </div>
+            <button type="submit"
+              class="flex flex-row justify-center items-center space-x-2 p-2 w-full text-base rounded bg-teal-600/30 hover:bg-teal-800/100 transition-all border border-teal-950/10 hover:border-teal-950/50 hover:text-teal-100">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-log-in">
+                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                  <polyline points="10 17 15 12 10 7" />
+                  <line x1="15" x2="3" y1="12" y2="12" />
+                </svg>
+              </span>
+              <span>
+                Sign in
+              </span>
+            </button>
+            <div>
+              <p class="text-sm">
+                Don't have an account?
+                <a href="#" class="text-teal-300 hover:text-teal-500 transition-all">
+                  Sign up
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-teal-950/50 text-gray-100 pt-10 px-10">
+      <div class="md:mt-20 space-y-8">
+        <!-- Brand name -->
+        <h1 class="text-2xl font-bold text-center relative transition-all hover:opacity-80">
+          <a href="https://github.com/hawolt/SwiftRift" target="_blank">
+            SwiftRift
+            <!-- External link icon -->
+            <span class="ml-1 absolute text-teal-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-external-link">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" x2="21" y1="14" y2="3" />
+              </svg>
+            </span>
+          </a>
+        </h1>
+        <!-- Brand description -->
+        <p>
+          SwiftRift is a free, open-source, and cross-platform League of Legends client written in Java.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tenetur molestias rem praesentium culpa
+          minima sequi odio deleniti. Dolor necessitatibus iusto quasi blanditiis? Amet ab doloremque, corporis suscipit
+          explicabo nihil.
+        </p>
+        <p>
+          Visit the <a href="https://github.com/hawolt/SwiftRift"
+            class="text-teal-300 underline underline-offset-4 hover:text-teal-500 transition-all"
+            target="_blank">GitHub</a> repository for more information.
+        </p>
+        <p class="text-xs text-gray-300 md:bottom-5 md:fixed">
+          SwiftRift is not affiliated with Riot Games, Inc. League of Legends and Riot Games are trademarks, service
+          marks, and registered trademarks of Riot Games, Inc.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
