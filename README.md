@@ -14,3 +14,5 @@ After you have the `dist/output.css` file you can use it in your HTML file.
 <!-- ./src/index.html -->
 <link href="../dist/output.css" rel="stylesheet">
 ```
+
+View demo [here](https://phxgg.github.io/swiftrift-login/src)
